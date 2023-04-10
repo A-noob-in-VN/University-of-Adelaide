@@ -1,0 +1,5 @@
+dictonary word          output
+dict      high          142
+dict      low           362
+dict      middle        992
+dict      median        -1

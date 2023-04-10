@@ -1,0 +1,62 @@
+% Hangman Game in MATLAB
+
+% Set up the game
+wordList = {'MATLAB', 'programming', 'data', 'science', 'machine', 'learning'};
+secretWord = wordList{randi(length(wordList))}; % choose a random word from the list
+guessedLetters = '';
+incorrectGuesses = 0;
+maxIncorrectGuesses = 6;
+
+% Play the game
+while true
+    % Display the current state of the game
+    displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses);
+    
+    % Check if the game is over
+    if incorrectGuesses >= maxIncorrectGuesses
+        disp('Sorry, you lose!');
+        break;
+    elseif all(ismember(secretWord, guessedLetters))
+        disp('Congratulations, you win!');
+        break;
+    end
+    
+    % Get a guess from the user
+    guess = input('Guess a letter: ', 's');
+    if ~isletter(guess) || length(guess) ~= 1
+        disp('Invalid input, please enter a single letter.');
+        continue;
+    elseif ismember(guess, guessedLetters)
+        disp('You already guessed that letter, try again.');
+        continue;
+    end
+    
+    % Update the game state based on the guess
+    guessedLetters = [guessedLetters, guess];
+    if ismember(guess, secretWord)
+        disp('Correct!');
+    else
+        disp('Incorrect!');
+        incorrectGuesses = incorrectGuesses + 1;
+    end
+end
+
+% Display the final state of the game
+displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses);
+
+% Helper function to display the current state of the game
+function displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses)
+    fprintf('Secret word: %s\n', maskWord(secretWord, guessedLetters));
+    fprintf('Guessed letters: %s\n', guessedLetters);
+    fprintf('Incorrect guesses: %d/%d\n', incorrectGuesses, maxIncorrectGuesses);
+end
+
+% Helper function to mask the secret word with asterisks for unguessed letters
+function maskedWord = maskWord(secretWord, guessedLetters)
+    maskedWord = secretWord;
+    for i = 1:length(secretWord)
+        if ~ismember(secretWord(i), guessedLetters)
+            maskedWord(i) = '*';
+        end
+    end
+end

@@ -1,0 +1,5 @@
+In the figure, it will display 2 graph, 1 in the blue line and 1 in the red line. 
+The blue line will have the starting point at the intersection of x, y axis -> it's the vector B
+THe red line will have the starting point at 0 of the vertical axis, go straght until reach the 6 of horizontal axis, then goes up.
+-> it's the vector C
+Also, 2 vector will have a period that creat a parallel in the middle, and then they will meet each other at end after they being seperated for a while.

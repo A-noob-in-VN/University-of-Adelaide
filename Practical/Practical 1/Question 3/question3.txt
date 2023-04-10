@@ -1,0 +1,13 @@
+percentage = (300000 / dailyUse)*100
+
+test case: 1 kilolitres
+input: 1
+expected output: 3x10^7.00
+
+test case: 248140 kilolitres
+input: 248140
+expected output: 120.90
+
+test case: 150000 kilolitres
+input: 150000
+expected output: 200.00

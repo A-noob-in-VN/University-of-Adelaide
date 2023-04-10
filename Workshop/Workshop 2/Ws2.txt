@@ -1,0 +1,31 @@
+width      height    areaRect
+3          4        12.00
+6.0        3.5      21.00
+
+width      height    perimeterRect
+1          1        4.0
+2.0        3.0      10.0
+
+balance expenditure weeksLeft
+100     10          10.0
+25      10          2.5
+1000    100         10.0
+250     50          5.0
+300     30          10.
+
+name      output
+Minh      Your name is: Minh
+Trang     Your name is: Trang
+Huy       Your name is: Huy
+Eddy      Your name is: Eddy
+Susan     Your name is: Susan
+
+Enter a type of animal: cat
+Enter a name: Kitty
+Enter an activity: sleeping
+I saw your cat, Kitty, sleeping in my garden.
+
+Enter a type of animal: cat
+Enter a name: Yuki
+Enter an activity: chasing
+I saw your cat, Yuki, chasing in my garden.

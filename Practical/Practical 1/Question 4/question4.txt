@@ -1,0 +1,13 @@
+Daily cost for of transportation for those driving a car
+
+test case: 300,000
+input: 300000
+expected output: $1,575,000
+
+test case: 150,000
+input: 150000
+expected output: $787,500
+
+test case: 0 
+input: 0
+expected output: $0

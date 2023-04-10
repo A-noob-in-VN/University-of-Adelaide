@@ -1,0 +1,5 @@
+Input    Expected Result         Actual Result
+3       'Not divisible by four' 'Not divisible by four'
+4       'Divisible by four'     'Divisible by four'
+0       'Divisible by four'     'Divisible by four'
+8       'Divisible by four'     'Divisible by four'

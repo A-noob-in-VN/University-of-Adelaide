@@ -1,0 +1,12 @@
+Inut:
+30
+Beatrice
+40
+Alan
+50
+Celia
+-1
+
+Output:
+"Beatrice" "Alan" "Celia"
+30 40 50

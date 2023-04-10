@@ -1,0 +1,8 @@
+Since in this case, we're using the 'randi()' for calculating, so the output will
+be vary. Then in this text, I only write down the expectation after a few times 
+testing.
+After times running, I found out the code may give me:
+- Maximum number: 50
+- Minimum number: 5
+- And for the average, it should be about 25.
+

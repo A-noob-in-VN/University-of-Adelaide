@@ -1,0 +1,4 @@
+Test case for the question 4:
+
+input: num1 num2 num3  num4  num5 
+       111  122  133   144   155  

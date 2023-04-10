@@ -1,0 +1,9 @@
+total = population * 0.19
+
+test case: 0 population
+input: 0
+expected output: 0
+
+test case: 1.306 million population
+input: 1306000
+expected output: 248140

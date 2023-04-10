@@ -1,0 +1,4 @@
+Original     Expected Result     Actual Result
+A            C
+[2 4]        [4 16]              [4 16]
+[-1 0 1]     [0.5 1 2]           [0.5 1 2]

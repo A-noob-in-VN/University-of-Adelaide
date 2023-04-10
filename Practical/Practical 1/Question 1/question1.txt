@@ -1,0 +1,23 @@
+test case: height, depth and length all 1
+
+input:
+1 
+1 
+1
+expected output: 1
+
+test case: height, depth and length all 2
+
+input:
+2
+2
+2
+expected output: 8
+
+test case: height is 1, depth is 2 and length is 3
+
+input:
+1
+2
+3
+expected output: 6

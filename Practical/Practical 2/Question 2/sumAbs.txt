@@ -1,0 +1,4 @@
+input: num1 num2 num3  num4  num5 expected output: absSum. actual output: absSum.
+      -1.0  -4.0 -3.0  -6.0 -2.0          16                    16
+       1.0   4.0  3.0   6.0  8.0          22                    22
+       1.0  -5.0  3.0  -6.0  2.0          17                    17
