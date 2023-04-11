@@ -1,0 +1,9 @@
+function [min max] = minMaxVectors(v1, v2);
+    arrey = 0;
+    for i = 1:length(v1)
+        arrey = [arrey v1(i)];
+    end
+    for j = 1:length(v2)
+        arrey = [arrey v2(j)];
+    min = min(arrey)
+end
