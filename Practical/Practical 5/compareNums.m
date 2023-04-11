@@ -1,6 +1,10 @@
-function [small big] = compareNums(x, y);
+function [small, big] = compareNums(x, y);
     if x < y
-        fprintf('%, %', x, y)
+        small = x;
+        big = y;
+        
     else
-        fprintf('%, %', y, x)
+        small = y;
+        big = x;
+        
 end
