@@ -1,9 +1,12 @@
 %https://github.com/A-noob-in-VN/University-of-Adelaide
-number = 5;
-number = exp(number, 2);
-disp(number);
-function number = exp(number, exp) 
-    for i = 2:exp
-        number = number * number;
-    end
+
+function [words] = readList(wordList)
+listText = fileread(wordList);
+listWords = splitlines(listText);
+listWords = listWords(1:end-1);
+
+words = [];
+for i = 1:length(listWords)
+    words = [words string(listWords(i))];
+end
 end

@@ -16,6 +16,7 @@ while true
     % Check if the game is over
     if incorrectGuesses >= maxIncorrectGuesses
         disp('Sorry, you lose!');
+        fprintf('The word is: %s \n', secretWord)
         break;
     elseif all(ismember(secretWord, guessedLetters))
         disp('Congratulations, you win!');
@@ -73,3 +74,8 @@ for i = 1:length(listWords)
     words = [words string(listWords(i))];
 end
 end
+
+
+
+
+
