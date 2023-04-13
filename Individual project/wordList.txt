@@ -18,7 +18,7 @@ cannon
 spurious
 swanky
 nutritious
-far-flung
+furthest
 certain
 need
 prepare
@@ -42,7 +42,7 @@ sleep
 vast
 cherry
 heal
-well-off
+kind
 match
 fork
 run

@@ -13,16 +13,6 @@ while true
     % Display the current state of the game
     displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses);
     
-    % Check if the game is over
-    if incorrectGuesses >= maxIncorrectGuesses
-        disp('Sorry, you lose!');
-        fprintf('The word is: %s \n', secretWord)
-        break;
-    elseif all(ismember(secretWord, guessedLetters))
-        disp('Congratulations, you win!');
-        break;
-    end
-    
     % Get a guess from the user
     guess = input('Guess a letter: ', 's');
     if ~isletter(guess) || length(guess) ~= 1
@@ -41,10 +31,20 @@ while true
         disp('Incorrect!');
         incorrectGuesses = incorrectGuesses + 1;
     end
+
+    % Check if the game is over
+    if incorrectGuesses >= maxIncorrectGuesses
+        disp('Sorry, you lose!');
+        break;
+    elseif all(ismember(secretWord, guessedLetters))
+        disp('Congratulations, you win!');
+        break;
+    end
 end
 
 % Display the final state of the game
-displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses);
+fprintf('The word is: %s \n', secretWord)
+
 
 % Helper function to display the current state of the game
 function displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses)

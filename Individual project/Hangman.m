@@ -43,16 +43,16 @@ while true
 end
 
 % Display the final state of the game
-displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses);
+fprintf('The word is: %s \n', secretWord)
 
-% Helper function to display the current state of the game
+% Function to display the current state of the game
 function displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses)
     fprintf('Secret word: %s\n', maskWord(secretWord, guessedLetters));
     fprintf('Guessed letters: %s\n', guessedLetters);
     fprintf('Incorrect guesses: %d/%d\n', incorrectGuesses, maxIncorrectGuesses);
 end
 
-% Helper function to mask the secret word with asterisks for unguessed letters
+% Function to mask the secret word with asterisks for unguessed letters
 function maskedWord = maskWord(secretWord, guessedLetters)
     maskedWord = secretWord;
     for i = 1:length(secretWord)
@@ -62,14 +62,14 @@ function maskedWord = maskWord(secretWord, guessedLetters)
     end
 end
 
-%Helper function for insert the word list into the game
+%Function for insert the word list into the game
 function [words] = readList(wordList)
-listText = fileread(wordList);
-listWords = splitlines(listText);
-listWords = listWords(1:end-1);
+    listText = fileread(wordList);
+    listWords = splitlines(listText);
+    listWords = listWords(1:end-1);
 
-words = [];
-for i = 1:length(listWords)
-    words = [words string(listWords(i))];
-end
+    words = [];
+    for i = 1:length(listWords)
+        words = [words string(listWords(i))];
+    end
 end
