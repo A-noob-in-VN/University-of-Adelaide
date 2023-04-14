@@ -4,13 +4,17 @@
 
 %----------------------------------------------------------------------------%
     % Check if the game is over
-    if incorrectGuesses >= maxIncorrectGuesses %Check if player have guessed more than the limit time
+    if incorrectGuesses >= maxIncorrectGuesses %Check if player have 
+                                               %guessed more than 
+                                               %the limit time
         
         disp('Sorry, you lose!');
         
         break;
 
-    elseif all(ismember(secretWord, guessedLetters)) %To check if all letter in guessedLetters is match to the secretWord
+    elseif all(ismember(secretWord, guessedLetters)) %To check if all 
+                                                     %letters in guessedLetters 
+                                                     %is match to the secretWord
 
         disp('Congratulations, you win!');
 
@@ -20,3 +24,5 @@
 %----------------------------------------------------------------------------%
     % Display the final state of the game
     fprintf('The word is: %s \n', secretWord) %reveal the word when the game is end
+
+%----------------------------------------------------------------------------%

@@ -18,3 +18,4 @@ function maskedWord = maskWord(secretWord, guessedLetters)
         end
     end
 end
+%----------------------------------------------------------------------------%

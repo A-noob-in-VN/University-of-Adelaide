@@ -10,11 +10,27 @@ maxIncorrectGuesses = 6;
 % Play the game
 while true
 
+    %Display the image for each time user got the wrong answer
+    if incorrectGuesses == 0
+        imshow("0.jpg")
+    elseif incorrectGuesses == 1
+        imshow("1.jpg")
+    elseif incorrectGuesses == 2
+        imshow("4.jpg")
+    elseif incorrectGuesses == 3
+        imshow("5.jpg")
+    elseif incorrectGuesses == 4
+        imshow("8.jpg")    
+    elseif incorrectGuesses == 5
+        imshow("9.jpg")
+    end
+
     % Display the current state of the game
     displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses);
     
     % Check if the game is over
     if incorrectGuesses >= maxIncorrectGuesses
+        imshow("10.jpg")
         disp('Sorry, you lose!');
         break;
     elseif all(ismember(secretWord, guessedLetters))
@@ -24,6 +40,7 @@ while true
     
     % Get a guess from the user
     guess = input('Guess a letter: ', 's');
+
     if ~isletter(guess) || length(guess) ~= 1
         disp('Invalid input, please enter a single letter. ');
         continue;
@@ -44,6 +61,7 @@ end
 
 % Display the final state of the game
 fprintf('The word is: %s \n', secretWord)
+
 
 % Function to display the current state of the game
 function displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses)
@@ -69,7 +87,14 @@ function [words] = readList(wordList)
     listWords = listWords(1:end-1);
 
     words = [];
+    
     for i = 1:length(listWords)
         words = [words string(listWords(i))];
     end
 end
+
+%Reference: 
+    % For the pictures: https://www.pling.com/p/1231493/
+    % Author: Marc Oliveras
+    % Email: admin@oligalma.com
+    % Website: http://oligalma.com

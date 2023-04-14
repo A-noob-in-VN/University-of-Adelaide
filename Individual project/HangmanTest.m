@@ -1,14 +1,29 @@
-% Hangman final code prompt
+% Hangman testing code prompt
 
 % Set up the game
 words = readList("wordList.txt");
 secretWord = words{randi(length(words))}; % choose a random word from the list
+
 guessedLetters = '';
 incorrectGuesses = 0;
 maxIncorrectGuesses = 6;
 
 % Play the game
 while true
+
+    if incorrectGuesses == 0
+        imshow("0.jpg")
+    elseif incorrectGuesses == 1
+        imshow("1.jpg")
+    elseif incorrectGuesses == 2
+        imshow("4.jpg")
+    elseif incorrectGuesses == 3
+        imshow("5.jpg")
+    elseif incorrectGuesses == 4
+        imshow("8.jpg")    
+    elseif incorrectGuesses == 5
+        imshow("9.jpg")
+    end
 
     % Display the current state of the game
     displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses);
@@ -34,17 +49,21 @@ while true
 
     % Check if the game is over
     if incorrectGuesses >= maxIncorrectGuesses
+        imshow("10.jpg")
         disp('Sorry, you lose!');
         break;
     elseif all(ismember(secretWord, guessedLetters))
         disp('Congratulations, you win!');
         break;
     end
+
+    
 end
+
+
 
 % Display the final state of the game
 fprintf('The word is: %s \n', secretWord)
-
 
 % Helper function to display the current state of the game
 function displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses)
@@ -74,6 +93,8 @@ for i = 1:length(listWords)
     words = [words string(listWords(i))];
 end
 end
+
+
 
 
 
