@@ -20,7 +20,7 @@
 %----------------------------------------------------------------------------%
 
     % Update the game state based on the guess
-    guessedLetters = [guessedLetters, guess];%Update the input character
+    guessedLetters = [guessedLetters, guess]; %Update the input character
 
     if ismember(guess, secretWord)% check if the guess letter is match to any letter in the secret word
 
