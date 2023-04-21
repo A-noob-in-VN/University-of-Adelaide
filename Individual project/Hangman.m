@@ -12,13 +12,13 @@ while true
 
     %Display the image for each time user got the wrong answer
     if incorrectGuesses == 0
-        imshow("0.jpg")
+        imshow("3.jpg")
     elseif incorrectGuesses == 1
-        imshow("1.jpg")
-    elseif incorrectGuesses == 2
-        imshow("4.jpg")
-    elseif incorrectGuesses == 3
         imshow("5.jpg")
+    elseif incorrectGuesses == 2
+        imshow("6.jpg")
+    elseif incorrectGuesses == 3
+        imshow("7.jpg")
     elseif incorrectGuesses == 4
         imshow("8.jpg")    
     elseif incorrectGuesses == 5
