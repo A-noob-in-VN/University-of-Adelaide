@@ -98,3 +98,6 @@ end
     % Author: Marc Oliveras
     % Email: admin@oligalma.com
     % Website: http://oligalma.com
+
+    % For the video: https://dova-s.jp/bgm/play13761.html
+    % License: https://dova-s.jp/EN/_contents/license/
