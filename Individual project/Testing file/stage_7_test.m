@@ -1,5 +1,10 @@
 % Stage 7 test code:
-while True
+
+% This file is created to check whether the code can generate the right
+% image in each stage of the game, by lettin the user enter a specific
+% number in a range 0 to 5
+
+while true
 
     incorrectGuesses = input('Enter a number between 0 & 5; Enter 6 to quit: ');
 
