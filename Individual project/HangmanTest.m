@@ -1,4 +1,7 @@
-% Hangman testing code prompt
+% Hangman testing code 
+
+% For this file, it will run through the code with only one known word,
+% which is use for checking if the game can run smoothly
 
 % Set up the game
 
