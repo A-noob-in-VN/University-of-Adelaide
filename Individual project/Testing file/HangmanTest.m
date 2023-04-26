@@ -1,7 +1,7 @@
 % Hangman testing code 
 
 % For this file, it will run through the code with only one known word,
-% which is use for checking if the game can run smoothly
+% which is use for checking if the game can run smoothly with full function
 
 % Set up the game
 
