@@ -9,7 +9,8 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
-            ]
+            ],
+            "compilerPath": "E:\\New folder\\MinGW\\MinGW\\bin\\g++.exe"
         }
     ],
     "version": 4
