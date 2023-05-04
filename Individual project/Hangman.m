@@ -5,7 +5,7 @@ words = readList("wordList.txt");
 secretWord = words{randi(length(words))}; % choose a random word from the list
 guessedLetters = '';
 incorrectGuesses = 0;
-maxIncorrectGuesses = 6;
+maxIncorrectGuess = 6;
 
 % Play the game
 while true
@@ -26,10 +26,10 @@ while true
     end
 
     % Display the current state of the game
-    displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuesses);
+    displayState(secretWord, guessedLetters, incorrectGuesses, maxIncorrectGuess);
     
     % Check if the game is over
-    if incorrectGuesses >= maxIncorrectGuesses
+    if incorrectGuesses >= maxIncorrectGuess
         imshow("10.jpg")
         disp('Sorry, you lose!');
         break;
@@ -41,7 +41,10 @@ while true
     % Get a guess from the user
     guess = input('Guess a letter: ', 's');
 
-    if ~isletter(guess) || length(guess) ~= 1
+    if ~isletter(guess)
+        disp('Invalid input, please enter a single letter. ');
+        continue;
+    elseif length(guess) ~= 1
         disp('Invalid input, please enter a single letter. ');
         continue;
     elseif ismember(guess, guessedLetters)
