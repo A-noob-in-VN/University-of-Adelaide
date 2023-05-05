@@ -6,10 +6,16 @@
 
     %In this step, I will check whether the input is a letter or the length
     %is not valid...
-    if ~isletter(guess) || length(guess) ~= 1
+    if ~isletter(guess)
 
         disp('Invalid input, please enter a single letter. ');
 
+        continue;
+     
+    elseif length(guess) ~= 1
+
+        disp('Invalid input, please enter a single letter. ');
+        
         continue;
 
     %... or the input is already used in previous turn.

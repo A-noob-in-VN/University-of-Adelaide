@@ -41,7 +41,7 @@ while true
     % Get a guess from the user
     guess = input('Guess a letter: ', 's');
 
-    if ~isletter(guess)
+    if ~isletter(guess) 
         disp('Invalid input, please enter a single letter. ');
         continue;
     elseif length(guess) ~= 1
