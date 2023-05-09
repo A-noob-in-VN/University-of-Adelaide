@@ -1,0 +1,4 @@
+    Input:  Expected Output:
+    4       Primary level education
+    10      Secondary level education
+    15      Tertiary level education
