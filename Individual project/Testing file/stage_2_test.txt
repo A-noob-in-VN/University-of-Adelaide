@@ -1,0 +1,11 @@
+For the stage 2 testing case, we will run through the full code testing file
+
+File for testing: HangmanTest.m
+Stage: 2 - Take in the guess
+
+Input 			Expected output
+a 				*continue
+1				Invalid input, please enter a single letter.
+'space bar' 	Invalid input, please enter a single letter.
+Dot or splash	Invalid input, please enter a single letter.
+another 'a''	You already guessed that letter, try again.

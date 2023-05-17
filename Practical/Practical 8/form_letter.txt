@@ -1,0 +1,5 @@
+name          age  fraction    output
+Julia Smith   45   0.8         Your name is Julia Smith, you are 45 years old and your employment fraction is 0.8. 
+Tuan Minh     18   0.8         Your name is Tuan Minh, you are 18 years old and your employment fraction is 0.8. 
+Son Tung      20   0.8         Your name is Son Tung, you are 20 years old and your employment fraction is 0.8. 
+

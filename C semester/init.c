@@ -1,18 +1,10 @@
-using namespace std;
+#include <stdio.h>
 
-#include <iostream>
-#include <vector>
-#include <string>
-
-using namespace std;
-
-int main()
-{
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
-
-    for (const string& word : msg)
-    {
-        cout << word << " ";
-    }
-    cout << endl;
+int main() {
+   // printf() displays the string inside quotation
+    float x = -5.6 + 1 / 2;
+    printf("%f\n", x);
+    return 0;
+    
+    
 }
